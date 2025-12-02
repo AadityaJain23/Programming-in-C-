@@ -1,3 +1,7 @@
+/* Write a C program to compute the monthly pay of 100 employees usingeachemployee‗s name, basic pay. 
+The DA is computed as 52%of the basicpay. Gross-salary (basic pay + DA). 
+Print the employees name and gross salary. */
+
 #include <stdio.h>
 
 struct Employee{

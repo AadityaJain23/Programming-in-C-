@@ -1,6 +1,8 @@
+/* Create a Book structure containing book_id, title, author name and price. 
+Write a C program to pass a structure as a function argument and print thebook details. */
+
 #include <stdio.h>
 
-// Define structure
 struct Book {
     int book_id;
     char title[50];
@@ -8,7 +10,6 @@ struct Book {
     float price;
 };
 
-// Function to print book details (structure passed as argument)
 void printBook(struct Book b) {
     printf("\n--- Book Details ---\n");
     printf("Book ID: %d\n", b.book_id);
@@ -20,7 +21,6 @@ void printBook(struct Book b) {
 int main() {
     struct Book b1;
 
-    // Input book details
     printf("Enter Book ID: ");
     scanf("%d", &b1.book_id);
 
@@ -33,7 +33,6 @@ int main() {
     printf("Enter Price: ");
     scanf("%f", &b1.price);
 
-    // Passing structure to function
     printBook(b1);
 
     return 0;
